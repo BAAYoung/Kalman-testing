@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+''' This was taken from Stack overflow as an example of the linear kalman filter '''
 def kalman_xy(x, P, measurement, R,
               motion = np.matrix('0. 0. 0. 0.').T,
               Q = np.matrix(np.eye(4))):
