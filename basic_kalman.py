@@ -13,10 +13,10 @@ X[1,0] = u0
 X_meas[0,0] = x0
 X_meas[1,0] = u0
 A = np.matrix([[1.0, dt],[0.0,1.0-dt*nu]])
-H = np.matrix([[0.0, 0.0],[0.0,1.0]])
+H = np.matrix([[1.0, 0.0],[0.0,1.0]])
 print(A.shape)
-sigma_meas0 = 1.0
-sigma_meas1 = 1.0
+sigma_meas0 = 0.1
+sigma_meas1 = 0.1
 sigma_acc = 0.2
 Q = np.matrix([[0.0,0.0],[0.0,1.0]])*sigma_acc**2
 R = np.matrix([[sigma_meas0**2,0.0],[0.0,sigma_meas1**2]])
