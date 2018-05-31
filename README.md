@@ -1,2 +1,2 @@
 # Kalman-testing
-Implementation of the unscented Kalman filter for the SWE equations
+Implementations of linear and unscented kalman filters for testing research ideas.
